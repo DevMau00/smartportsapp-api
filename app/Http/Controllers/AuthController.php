@@ -41,7 +41,7 @@ class AuthController extends Controller
     /**
      * @throws ValidationException
      */
-    public function register(Request $request)
+    /* public function register(Request $request)
     {
         try {
             $this->validate($request, [
@@ -60,7 +60,7 @@ class AuthController extends Controller
         } catch (ValidationException $e) {
             return response()->json(['success' => false, 'message' => $e->getMessage()]);
         }
-    }
+    } */
 
     /**
      * Get the authenticated User.
@@ -77,12 +77,12 @@ class AuthController extends Controller
      *
      * @return JsonResponse
      */
-    public function logout() : JsonResponse
+    /* public function logout() : JsonResponse
     {
         auth()->logout();
 
         return response()->json(['message' => 'Successfully logged out']);
-    }
+    } */
 
     /**
      * Refresh a token.

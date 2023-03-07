@@ -2,38 +2,25 @@
 
 namespace App\Models;
 
-use Illuminate\Auth\Authenticatable;
-use Laravel\Lumen\Auth\Authorizable;
-use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
-use Illuminate\Contracts\Auth\Access\Authorizable as AuthorizableContract;
+use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\HasOne;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
+use Laravel\Sanctum\HasApiTokens;
+use LaravelAndVueJS\Traits\LaravelPermissionToVueJS;
+
 use Spatie\Permission\Traits\HasRoles;
-use Tymon\JWTAuth\Contracts\JWTSubject;
 
-class User extends Model implements AuthenticatableContract, AuthorizableContract, JWTSubject
+class User extends Authenticatable
 {
-    use Authenticatable, Authorizable, HasFactory, HasRoles;
-
-    /**
-     * Get the identifier that will be stored in the subject claim of the JWT.
-     *
-     * @return mixed
-     */
-    public function getJWTIdentifier()
-    {
-        return $this->getKey();
-    }
-
-    /**
-     * Return a key value array, containing any custom claims to be added to the JWT.
-     *
-     * @return array
-     */
-    public function getJWTCustomClaims()
-    {
-        return [];
-    }
+    use HasApiTokens;
+    use HasFactory;
+    use Notifiable;
+    use HasRoles;
+    use LaravelPermissionToVueJS;
 
     /**
      * The attributes that are mass assignable.
@@ -41,11 +28,25 @@ class User extends Model implements AuthenticatableContract, AuthorizableContrac
      * @var array<int, string>
      */
     protected $fillable = [
-        'first_name',
-        'last_name',
+        'name',
+        'company',
+        'company_id',
+        'phone',
         'email',
-        'status',
         'password',
+        'ref',
+        'owner',
+        'settings',
+        'wallet',
+        'notes',
+        'temp_token',
+        'forwarder_id',
+        'forwarders',
+        'membership',
+        'membership_start',
+        'membership_end',
+        'api_key',
+        'last_login',
     ];
 
     /**
@@ -56,6 +57,7 @@ class User extends Model implements AuthenticatableContract, AuthorizableContrac
     protected $hidden = [
         'password',
         'remember_token',
+        'last_login',
     ];
 
     /**
@@ -63,5 +65,61 @@ class User extends Model implements AuthenticatableContract, AuthorizableContrac
      *
      * @var array<string, string>
      */
-    protected $casts = [];
+    protected $casts = [
+        'wallet'            => 'json',
+        'settings'          => 'json',
+        'forwarders'        => 'json',
+        'notes'             => 'json',
+        'membership'        => 'string',
+        'temp_token'        => 'string',
+        'email_verified_at' => 'datetime',
+        'membership_start' => 'datetime',
+        'membership_end' => 'datetime',
+    ];
+
+    protected function name(): Attribute
+    {
+        return new Attribute(
+            get: fn($value) => ucwords($value),
+
+            set: function($value){
+                return strtolower($value);
+            },
+        );
+    }
+
+    public function ownerdata() : BelongsTo
+    {
+        return $this->belongsTo(User::class, 'owner', 'ref');
+    }
+
+
+    // Forwarders BelongsTo
+    public function forwarder() : BelongsTo
+    {
+        return $this->BelongsTo(Forwarder::class, 'forwarder_id', 'id');
+    }
+
+    // Company BelongsTo
+    public function companyinfo() : BelongsTo
+    {
+        return $this->BelongsTo(Company::class, 'company_id', 'id');
+    }
+
+
+    // Orders OneToMany
+
+    public function orders_sold(){
+        return $this->HasMany(Order::class, 'sales_id', 'id');
+    }
+
+    public function orders_bought(){
+        return $this->HasMany(Order::class, 'client_id', 'id');
+    }
+
+    //Polymorphic
+
+    public function archivo(){
+        return $this->morphOne(Archivo::class, 'archivable');
+    }
 }

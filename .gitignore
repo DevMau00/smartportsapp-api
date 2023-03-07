@@ -6,3 +6,4 @@ Homestead.yaml
 .phpunit.result.cache
 .editorconfig
 .DS_Store
+.history
