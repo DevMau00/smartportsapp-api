@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "aa8ece1b-cba0-4e0a-afc3-24ffec9aa584",
+		"name": "Tracking Smartports",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Track BillOfLading",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "api_key",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "bl_code",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "shipping_line",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.smartports.app/track/bl",
+					"protocol": "https",
+					"host": [
+						"api",
+						"smartports",
+						"app"
+					],
+					"path": [
+						"track",
+						"bl"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Track Container",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "api_key",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "container_code",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.smartports.app/track/container",
+					"host": [
+						"https"
+					],
+					"port": "api.smartports.app",
+					"path": [
+						"track",
+						"container"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Track AirWayBill",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "api_key",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "awb_code",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.smartports.app/track/awb",
+					"protocol": "https",
+					"host": [
+						"api",
+						"smartports",
+						"app"
+					],
+					"path": [
+						"track",
+						"awb"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

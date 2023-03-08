@@ -56,7 +56,7 @@ class ApiRequests extends Model
         'response_time' => 'string',
         'response_size' => 'string',
         'response_type' => 'string',
-        'response_content' => 'string',
+        'response_content' => 'json',
         'response_headers' => 'string',
         'request_headers' => 'string',
         'request_body' => 'string',

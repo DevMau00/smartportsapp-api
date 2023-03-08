@@ -7,20 +7,15 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;
-use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\Notifiable;
-use Laravel\Sanctum\HasApiTokens;
-use LaravelAndVueJS\Traits\LaravelPermissionToVueJS;
+
+use Illuminate\Database\Eloquent\Model;
 
 use Spatie\Permission\Traits\HasRoles;
 
-class User extends Authenticatable
+class User extends Model
 {
-    use HasApiTokens;
     use HasFactory;
-    use Notifiable;
     use HasRoles;
-    use LaravelPermissionToVueJS;
 
     /**
      * The attributes that are mass assignable.

@@ -19,6 +19,25 @@
     <div class="content">
 
 
+        <div class="overflow-hidden content-section" id="postman">
+            <h2>Download Collection</h2>
+            
+            <a href="https://www.postman.com/downloads/" target="_blank">
+                <img alt="" title="Postman" src="images/postman.png" height="50" style="margin-left:30px; margin-bottom: 15px;"/>
+            </a>
+            <pre>
+    Download Postman
+
+        https://www.postman.com/downloads/
+                            </pre>
+            <p>
+                Download the Postman Collection so you can test it ASAP:<br>
+                <code class="higlighted break-word">https://api.smartports.app/TrackingSmartports.postman_collection.json</code>
+            </p>
+            
+        </div>
+
+
         <div class="overflow-hidden content-section" id="get-api-key">
             <h1>Get your  API KEY</h1>
             <pre>
@@ -35,6 +54,7 @@
         </div>
 
 
+
         <div class="overflow-hidden content-section" id="track-bl">
             <h2>Track Bill of Lading</h2>
             <pre><code class="bash">
@@ -46,7 +66,7 @@ curl \
 -F 'shipping_line=MAEU' \
                 </code></pre>
             <p>
-                To track the Bill of Lading you need to make a POST call to the following url :<br>
+                To track the Bill of Lading you need to make a POST call to the following url and send the parameters as <b>BODY [form-data]</b>:<br>
                 <code class="higlighted break-word">https://api.smartports.app/track/bl</code>
             </p>
             <br>
@@ -243,7 +263,7 @@ curl \
 -F 'container_code=MRKU6333050' \
                 </code></pre>
             <p>
-                To track the container you need to make a POST call to the following url, the container call will return an OBJECT instead of an ARRAY as from the track BL call :<br>
+                To track the container you need to make a POST call to the following url and send the parameters as <b>BODY [form-data]</b>, the container call will return an OBJECT instead of an ARRAY as from the track BL call :<br>
                 <code class="higlighted break-word">https://api.smartports.app/track/container</code>
             </p>
             <br>
@@ -477,7 +497,7 @@ curl \
 -F 'awb_code=172-56546685' \
                 </code></pre>
             <p>
-                To track the air way bill you need to make a POST call to the following url,:<br>
+                To track the air way bill you need to make a POST call to the following url and send the parameters as <b>BODY [form-data]</b>:<br>
                 <code class="higlighted break-word">https://api.smartports.app/track/awb</code>
             </p>
             <br>
@@ -756,6 +776,9 @@ Download {
                 </tbody>
             </table>
         </div>
+
+        
+
     </div>
     <div class="content-code"></div>
 </div>
