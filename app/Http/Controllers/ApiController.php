@@ -297,6 +297,7 @@ class ApiController extends BaseController
                         $save['response_code'] = $response->meta->code;
                     }
 
+                    unset($reference->air_info->trackpage_url);
                     unset($reference->airline_info->trackpage_url);
                     //return $save;
         
