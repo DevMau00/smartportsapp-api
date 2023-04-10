@@ -701,41 +701,41 @@ Download {
   
   result: [
     {
-        "carrier_code": "ALRB",
-        "carrier_name": "AC Container Line"
-    },
-    {
-        "carrier_code": "ADMU",
-        "carrier_name": "Admiral Container Lines"
-    },
-    {
-        "carrier_code": "ANRM",
-        "carrier_name": "Alianca"
-    },
-    {
-        "carrier_code": "APLU",
-        "carrier_name": "American President Lines (APL)"
-    },
-    {
-        "carrier_code": "ARKU",
-        "carrier_name": "Arkas"
-    },
-    {
-        "carrier_code": "ACLU",
-        "carrier_name": "Atlantic Container Line (ACL)"
-    },
-    {
-        "carrier_code": "ANNU",
-        "carrier_name": "Australia National Line (ANL)"
-    },
-    {
-        "carrier_code": "BLJU",
-        "carrier_name": "Avana Global FZCO (BALAJI)"
-    },
-    {
-        "carrier_code": "BURU",
-        "carrier_name": "BAL Container Line"
-    },
+			"carrier_code": "APLU",
+			"carrier_name": "American President Lines (APL)"
+		},
+		{
+			"carrier_code": "BURU",
+			"carrier_name": "BAL Container Line"
+		},
+		{
+			"carrier_code": "CMDU",
+			"carrier_name": "CMA CGM"
+		},
+		{
+			"carrier_code": "COSU",
+			"carrier_name": "COSCO"
+		},
+		{
+			"carrier_code": "EGLV",
+			"carrier_name": "Evergreen"
+		},
+		{
+			"carrier_code": "SUDU",
+			"carrier_name": "Hamburg Sud"
+		},
+		{
+			"carrier_code": "HLCU",
+			"carrier_name": "Hapag-Lloyd"
+		},
+		{
+			"carrier_code": "HDMU",
+			"carrier_name": "Hyundai Merchant Marine (HMM)"
+		},
+		{
+			"carrier_code": "MAEU",
+			"carrier_name": "Maersk"
+		},
     ......
                 </code></pre>
             

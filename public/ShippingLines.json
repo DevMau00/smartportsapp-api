@@ -1,187 +1,23 @@
 shipping_lines: [
 		{
-			"carrier_code": "ALRB",
-			"carrier_name": "AC Container Line"
-		},
-		{
-			"carrier_code": "ADMU",
-			"carrier_name": "Admiral Container Lines"
-		},
-		{
-			"carrier_code": "ANRM",
-			"carrier_name": "Alianca"
-		},
-		{
 			"carrier_code": "APLU",
 			"carrier_name": "American President Lines (APL)"
-		},
-		{
-			"carrier_code": "ARKU",
-			"carrier_name": "Arkas"
-		},
-		{
-			"carrier_code": "ACLU",
-			"carrier_name": "Atlantic Container Line (ACL)"
-		},
-		{
-			"carrier_code": "ANNU",
-			"carrier_name": "Australia National Line (ANL)"
-		},
-		{
-			"carrier_code": "BLJU",
-			"carrier_name": "Avana Global FZCO (BALAJI)"
 		},
 		{
 			"carrier_code": "BURU",
 			"carrier_name": "BAL Container Line"
 		},
 		{
-			"carrier_code": "BELC",
-			"carrier_name": "Bee Logistics Corp"
-		},
-		{
-			"carrier_code": "BLZU",
-			"carrier_name": "BLPL Singapore"
-		},
-		{
-			"carrier_code": "BANQ",
-			"carrier_name": "Blue Anchor America Line"
-		},
-		{
-			"carrier_code": "BWLU",
-			"carrier_name": "Blue Water Lines (BWL)"
-		},
-		{
-			"carrier_code": "BWLE",
-			"carrier_name": "Blue World Line"
-		},
-		{
-			"carrier_code": "BMSU",
-			"carrier_name": "BMC Line Shipping"
-		},
-		{
-			"carrier_code": "BNLS",
-			"carrier_name": "BNSF Logistics"
-		},
-		{
-			"carrier_code": "CAKU",
-			"carrier_name": "CAMELLIA LINE CO LTD"
-		},
-		{
-			"carrier_code": "MBFU",
-			"carrier_name": "Carpenters Shipping"
-		},
-		{
-			"carrier_code": "CHVW",
-			"carrier_name": "China Navigation Company (Swire Shipping)"
-		},
-		{
-			"carrier_code": "CULU",
-			"carrier_name": "China United Lines"
-		},
-		{
-			"carrier_code": "CKLU",
-			"carrier_name": "CK Line"
-		},
-		{
 			"carrier_code": "CMDU",
 			"carrier_name": "CMA CGM"
-		},
-		{
-			"carrier_code": "11DX",
-			"carrier_name": "CNC (Cheng Lie Navigation)"
-		},
-		{
-			"carrier_code": "CSHP",
-			"carrier_name": "Containerships"
 		},
 		{
 			"carrier_code": "COSU",
 			"carrier_name": "COSCO"
 		},
 		{
-			"carrier_code": "CRAU",
-			"carrier_name": "Cosiarma S.p.A."
-		},
-		{
-			"carrier_code": "CMCU",
-			"carrier_name": "Crowley Maritime"
-		},
-		{
-			"carrier_code": "DTRA",
-			"carrier_name": "Dachser"
-		},
-		{
-			"carrier_code": "DMCQ",
-			"carrier_name": "Damco"
-		},
-		{
-			"carrier_code": "SHKK",
-			"carrier_name": "DB Schenker"
-		},
-		{
-			"carrier_code": "DAYU",
-			"carrier_name": "Deutsche Afrika-Linien (DAL)"
-		},
-		{
-			"carrier_code": "11PG",
-			"carrier_name": "Dongjin Shipping"
-		},
-		{
-			"carrier_code": "PCSL",
-			"carrier_name": "Dong Young Shipping"
-		},
-		{
-			"carrier_code": "DSVF",
-			"carrier_name": "Dsv Ocean Transport"
-		},
-		{
-			"carrier_code": "ECNU",
-			"carrier_name": "Econship"
-		},
-		{
-			"carrier_code": "ECUW",
-			"carrier_name": "ECU Worldwide"
-		},
-		{
-			"carrier_code": "EXPO",
-			"carrier_name": "EIO"
-		},
-		{
-			"carrier_code": "ESPU",
-			"carrier_name": "Emirates Shipping Line"
-		},
-		{
-			"carrier_code": "EMKU",
-			"carrier_name": "Emkay Lines"
-		},
-		{
-			"carrier_code": "ESLU",
-			"carrier_name": "Ethiopian Shipping Line"
-		},
-		{
-			"carrier_code": "EUKO",
-			"carrier_name": "Eukor"
-		},
-		{
 			"carrier_code": "EGLV",
 			"carrier_name": "Evergreen"
-		},
-		{
-			"carrier_code": "FESO",
-			"carrier_name": "FESCO"
-		},
-		{
-			"carrier_code": "GSLU",
-			"carrier_name": "Gold Star Line"
-		},
-		{
-			"carrier_code": "GRIU",
-			"carrier_name": "Grimaldi Deep Sea S.P.A."
-		},
-		{
-			"carrier_code": "12GE",
-			"carrier_name": "Hai Hua Shipping (HASCO)"
 		},
 		{
 			"carrier_code": "SUDU",
@@ -192,72 +28,8 @@ shipping_lines: [
 			"carrier_name": "Hapag-Lloyd"
 		},
 		{
-			"carrier_code": "HIFI",
-			"carrier_name": "*Hellmann Worldwide Logistics"
-		},
-		{
-			"carrier_code": "11QU",
-			"carrier_name": "Heung-A Shipping"
-		},
-		{
-			"carrier_code": "HGLU",
-			"carrier_name": "Hillebrand"
-		},
-		{
 			"carrier_code": "HDMU",
 			"carrier_name": "Hyundai Merchant Marine (HMM)"
-		},
-		{
-			"carrier_code": "LMCU",
-			"carrier_name": "Ignazio Messina"
-		},
-		{
-			"carrier_code": "IILU",
-			"carrier_name": "Independent Container Line"
-		},
-		{
-			"carrier_code": "IDCL",
-			"carrier_name": "*Indus Container Lines (IDCL)"
-		},
-		{
-			"carrier_code": "12AT",
-			"carrier_name": "Interasia Lines"
-		},
-		{
-			"carrier_code": "JASO",
-			"carrier_name": "JAS Worldwide (Ocean)"
-		},
-		{
-			"carrier_code": "11WJ",
-			"carrier_name": "Jin Jiang Shipping (SHJJ)"
-		},
-		{
-			"carrier_code": "KKCL",
-			"carrier_name": "Kambara Kisen"
-		},
-		{
-			"carrier_code": "KKLU",
-			"carrier_name": "Kawasaki Kisen Kaisha (K Line)"
-		},
-		{
-			"carrier_code": "KMTU",
-			"carrier_name": "Korea Marine Transport (KMTC)"
-		},
-		{
-			"carrier_code": "KHNN",
-			"carrier_name": "Kuehne + Nagel (KN)"
-		},
-		{
-			"carrier_code": "LNLU",
-			"carrier_name": "Laurel Navigation"
-		},
-		{
-			"carrier_code": "LEHO",
-			"carrier_name": "Leschaco"
-		},
-		{
-			"carrier_code": "MCAW",
-			"carrier_name": "MacAndrews"
 		},
 		{
 			"carrier_code": "MAEU",
@@ -268,260 +40,24 @@ shipping_lines: [
 			"carrier_name": "Maersk Line Limited (MLL)"
 		},
 		{
-			"carrier_code": "MGSU",
-			"carrier_name": "Marguisa Shipping Lines"
-		},
-		{
-			"carrier_code": "MEXU",
-			"carrier_name": "Mariana Express Lines (MELL)"
-		},
-		{
-			"carrier_code": "MFTU",
-			"carrier_name": "Maritime Marfret"
-		},
-		{
-			"carrier_code": "MATS",
-			"carrier_name": "Matson Navigation Company Inc (MATS)"
-		},
-		{
-			"carrier_code": "MXCU",
-			"carrier_name": "Maxicon Container Line (MCL)"
-		},
-		{
 			"carrier_code": "MSCU",
 			"carrier_name": "Mediterranean Shipping Company (MSC)"
-		},
-		{
-			"carrier_code": "MRTU",
-			"carrier_name": "*Meratus Line"
-		},
-		{
-			"carrier_code": "13CQ",
-			"carrier_name": "Minsheng Ocean Shipping"
-		},
-		{
-			"carrier_code": "MOLU",
-			"carrier_name": "Mitsui O.S.K. Lines"
-		},
-		{
-			"carrier_code": "NSRU",
-			"carrier_name": "Namsung Shipping"
-		},
-		{
-			"carrier_code": "PDLU",
-			"carrier_name": "*Neptune Pacific Direct Line (NPDL)"
-		},
-		{
-			"carrier_code": "NIDU",
-			"carrier_name": "*Nile Dutch Africa Line"
-		},
-		{
-			"carrier_code": "NEDF",
-			"carrier_name": "Nippon Express"
 		},
 		{
 			"carrier_code": "NYKS",
 			"carrier_name": "Nippon Yusen Kaisha (NYK Line)"
 		},
 		{
-			"carrier_code": "32GH",
-			"carrier_name": "Nirint Shipping"
-		},
-		{
 			"carrier_code": "ONEY",
 			"carrier_name": "Ocean Network Express (ONE)"
-		},
-		{
-			"carrier_code": "OYLT",
-			"carrier_name": "Odyssey Logistics & Technology"
-		},
-		{
-			"carrier_code": "OOLU",
-			"carrier_name": "Orient Overseas Container Line (OOCL)"
-		},
-		{
-			"carrier_code": "OSTI",
-			"carrier_name": "Orient Star"
 		},
 		{
 			"carrier_code": "PCIU",
 			"carrier_name": "Pacific International Lines (PIL)"
 		},
 		{
-			"carrier_code": "PALU",
-			"carrier_name": "*Pan Asia Line"
-		},
-		{
-			"carrier_code": "15AC",
-			"carrier_name": "Pan Continental Shipping"
-		},
-		{
-			"carrier_code": "POBU",
-			"carrier_name": "Pan Ocean"
-		},
-		{
-			"carrier_code": "PSHI",
-			"carrier_name": "Pasha Hawaii"
-		},
-		{
-			"carrier_code": "PMLU",
-			"carrier_name": "Perma Shipping Line"
-		},
-		{
-			"carrier_code": "QNLU",
-			"carrier_name": "*Qatar Navigation Lines (QNL)"
-		},
-		{
-			"carrier_code": "REGU",
-			"carrier_name": "Regional Container Lines (RCL)"
-		},
-		{
-			"carrier_code": "ROMO",
-			"carrier_name": "Romocean"
-		},
-		{
-			"carrier_code": "SRRP",
-			"carrier_name": "Route Planner"
-		},
-		{
-			"carrier_code": "SAFM",
-			"carrier_name": "Safmarine"
-		},
-		{
-			"carrier_code": "SPNU",
-			"carrier_name": "Salam Pacific Indonesia Lines (SPIL)"
-		},
-		{
-			"carrier_code": "SIKU",
-			"carrier_name": "Samudera Shipping Line"
-		},
-		{
-			"carrier_code": "SJKU",
-			"carrier_name": "Sarjak Container Lines"
-		},
-		{
-			"carrier_code": "SHKU",
-			"carrier_name": "Sea Hawk Lines (SHAL)"
-		},
-		{
 			"carrier_code": "SEJJ",
 			"carrier_name": "Sealand"
-		},
-		{
-			"carrier_code": "SJHH",
-			"carrier_name": "Sealead Shipping"
-		},
-		{
-			"carrier_code": "SEIN",
-			"carrier_name": "Seino Logix Co"
-		},
-		{
-			"carrier_code": "SSPH",
-			"carrier_name": "SETH Shipping"
-		},
-		{
-			"carrier_code": "SHPT",
-			"carrier_name": "Shipco Transport"
-		},
-		{
-			"carrier_code": "SCIU",
-			"carrier_name": "Shipping Corporation of India (SCI)"
-		},
-		{
-			"carrier_code": "SKLU",
-			"carrier_name": "Sinokor"
-		},
-		{
-			"carrier_code": "12IH",
-			"carrier_name": "Sinotrans Container Lines"
-		},
-		{
-			"carrier_code": "12PD",
-			"carrier_name": "SITC Container Lines"
-		},
-		{
-			"carrier_code": "SMLM",
-			"carrier_name": "SM Line Corporation (SML)"
-		},
-		{
-			"carrier_code": "SNTU",
-			"carrier_name": "Stolt Tank Containers (STC)"
-		},
-		{
-			"carrier_code": "BAXU",
-			"carrier_name": "Sunmarine Shipping Services"
-		},
-		{
-			"carrier_code": "32GG",
-			"carrier_name": "*Taicang Container Lines"
-		},
-		{
-			"carrier_code": "GETU",
-			"carrier_name": "Tarros"
-		},
-		{
-			"carrier_code": "TOTE",
-			"carrier_name": "TOTE Maritime"
-		},
-		{
-			"carrier_code": "TLXU",
-			"carrier_name": "Trans Asian Shipping Services"
-		},
-		{
-			"carrier_code": "TJFH",
-			"carrier_name": "Transfar Shipping"
-		},
-		{
-			"carrier_code": "TVSU",
-			"carrier_name": "Transvision Shipping Line"
-		},
-		{
-			"carrier_code": "TSCW",
-			"carrier_name": "Tropical"
-		},
-		{
-			"carrier_code": "13DF",
-			"carrier_name": "T.S. Lines"
-		},
-		{
-			"carrier_code": "TRKU",
-			"carrier_name": "Turkon"
-		},
-		{
-			"carrier_code": "VMLU",
-			"carrier_name": "Vasco Maritime (VAS)"
-		},
-		{
-			"carrier_code": "WLWH",
-			"carrier_name": "Wallenius Wilhelmsen"
-		},
-		{
-			"carrier_code": "WHLC",
-			"carrier_name": "Wan Hai"
-		},
-		{
-			"carrier_code": "WECU",
-			"carrier_name": "W.E.C. (West European Container) Lines"
-		},
-		{
-			"carrier_code": "WWSU",
-			"carrier_name": "Westwood Shipping Lines"
-		},
-		{
-			"carrier_code": "WDSB",
-			"carrier_name": "World Direct Shipping (WDS)"
-		},
-		{
-			"carrier_code": "YMLU",
-			"carrier_name": "Yang Ming"
-		},
-		{
-			"carrier_code": "YASV",
-			"carrier_name": "Yusen Logistics"
-		},
-		{
-			"carrier_code": "ZIMU",
-			"carrier_name": "ZIM"
 		},
 		{
 			"carrier_code": "MCCQ",
@@ -532,12 +68,12 @@ shipping_lines: [
 			"carrier_name": "Sealand 3"
 		},
 		{
-			"carrier_code": "NPNE",
-			"carrier_name": "Nippon Express 2"
-		},
+			"carrier_code": "SJHH",
+			"carrier_name": "Sealead Shipping"
+		},                
 		{
-			"carrier_code": "CAMN",
-			"carrier_name": "Crowley Maritime 2"
+			"carrier_code": "WHLC",
+			"carrier_name": "Wan Hai"
 		},
 		{
 			"carrier_code": "22AA",
@@ -546,5 +82,13 @@ shipping_lines: [
 		{
 			"carrier_code": "WHLU",
 			"carrier_name": "Wan Hai 3"
-		}
+		},
+		{
+			"carrier_code": "YMLU",
+			"carrier_name": "Yang Ming"
+		},
+		{
+			"carrier_code": "ZIMU",
+			"carrier_name": "ZIM"
+		},
 	],
