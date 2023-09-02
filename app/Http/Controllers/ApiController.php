@@ -155,6 +155,9 @@ class ApiController extends BaseController
             if(!$user){
                 return response()->json(['error' => 'Invalid API KEY'], 401);
             }
+            if($user['email_verified_at'] == null){
+                return response()->json(['error' => 'Invalid API KEY'], 401);
+            }
             
             //return $user['id'];
 
@@ -184,7 +187,7 @@ class ApiController extends BaseController
                     $save['user_id'] = $user['id'];
                     $save['api_key'] = $form['api_key'];
                     $save['method'] = 'container';
-                    $save['url'] = 'track/bl';
+                    $save['url'] = 'track/bl'; //hay que subir que cambie a container
                     //
                     $save['ip'] = null;
                     $save['user_agent'] = null;
