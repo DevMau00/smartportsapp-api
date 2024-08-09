@@ -60,15 +60,16 @@ class ApiController extends BaseController
             }
             
             //return $user['id'];
-
-            $params    = [
-                'type'         => 'BL',
+            $params = [
+                'api_key'      => env('SEARATES'),
                 'number'       => $form['bl_code'], 
                 'sealine'      => $form['shipping_line'], 
-                'api_key'      => env('SEARATES'),
+                'type'         => 'BL',
                 'force_update' => false,
+                'route'        => true,
+                'ais'          => true,
             ];
-            $response  = Http::withToken(env('SEARATES'))->get($this->sea_url.'reference', $params);
+            $response  = Http::withToken(env('SEARATES'))->get($this->sea_url.'tracking', $params);
             if($response){
                 //return response()->json($response->object()->status);
                 if($response->object()){
@@ -160,15 +161,16 @@ class ApiController extends BaseController
             }
             
             //return $user['id'];
-
-            $params    = [
-                'number'       => $form['container_code'],
-                //'sealine'      => $form['carrier'],
-                'sealine'      => 'AUTO',
+            $params = [
                 'api_key'      => env('SEARATES'),
+                'number'       => $form['container_code'],
+                'sealine'      => '',
+                'type'         => 'CT',
                 'force_update' => false,
+                'route'        => true,
+                'ais'          => true,
             ];
-            $response  = Http::withToken(env('SEARATES'))->get($this->sea_url.'container', $params);
+            $response  = Http::withToken(env('SEARATES'))->get($this->sea_url.'tracking', $params);
             if($response){
                 //return response()->json($response->object()->status);
                 if($response->object()){

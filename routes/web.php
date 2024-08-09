@@ -26,7 +26,7 @@ Route::get('/', 'ApiController@home');
     ]);
 }); */
 
-Route::group(['prefix' => 'track/'], function () {
+Route::group(['prefix' => 'track/','middleware' => 'throttle,rate_limit,1'], function () {
     # BL
     Route::post('bl', 'ApiController@track_bl');
     # CONTAINER

@@ -73,6 +73,7 @@ $app->routeMiddleware([
     'permission' => Spatie\Permission\Middlewares\PermissionMiddleware::class,
     'role'       => Spatie\Permission\Middlewares\RoleMiddleware::class,
     'dev'        => App\Http\Middleware\DevelopmentAccess::class,
+    'throttle'   => App\Http\Middleware\ThrottleMiddleware::class,
 ]);
 
 /*
